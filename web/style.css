@@ -1,0 +1,54 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  background: #000; /* Taste T schaltet auf transparent für OBS */
+  overflow: hidden;
+}
+
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+/* nur während einer Aufnahme sichtbar. liegt außerhalb des canvas,
+   landet also nicht in der aufgenommenen Datei. */
+#recDot {
+  position: fixed;
+  top: 14px;
+  right: 14px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ff2d2d;
+  opacity: 0;
+}
+#recDot.on { opacity: 1 }
+
+/* Verbindungsknopf. Liegt außerhalb des canvas, wird also nicht
+   mit aufgenommen. Wird nach dem Verbinden fast unsichtbar. */
+#connect {
+  position: fixed;
+  bottom: 10px;
+  right: 12px;
+  font: 11px ui-monospace, monospace;
+  letter-spacing: .08em;
+  color: #555;
+  background: none;
+  border: 0;
+  padding: 4px;
+  cursor: pointer;
+  opacity: .4;
+}
+#connect:hover { opacity: 1; color: #fff }

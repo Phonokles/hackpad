@@ -1,0 +1,14 @@
+Reference,Quantity,Component,Description,Footprint,Notes
+U1,1,Seeed XIAO RP2040,Main microcontroller board,XIAO-Generic-Hybrid-14P,Through hole headers
+SW1-SW3,3,Cherry MX switch,Mechanical key switch,SW_Cherry_MX_1.00u_PCB,19.05 mm spacing
+SW4,1,ALPS EC11 rotary encoder,Incremental encoder with push button,RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm,5 pins plus 2 mounting tabs
+J1,1,Pin header 1x04 2.54 mm,Connector for the OLED module,PinHeader_1x04_P2.54mm_Vertical,Pin order GND-VCC-SCL-SDA
+J1,1,SSD1306 OLED 0.91 inch,128x32 I2C display module,-,Plugs into J1
+-,3,Keycap MX,Caps for the three switches,-,-
+-,1,Encoder knob,Knob for the EC11 shaft,-,6 mm shaft
+-,4,M3 heatset insert,Threaded insert for the case,-,4.7 mm hole 4 mm deep
+-,4,M3 screw 8 mm,Holds the top plate to the base,-,3.4 mm clearance holes
+-,1,PCB,74 x 75 mm two layer board,-,See production/gerbers
+-,1,Case base,2D printed,-,production/cad
+-,1,Case top plate,3D printed,-,1.5 mm around switch cutouts
+-,1,USB-C cable,Data cable for the XIAO,-,Must carry data not only power
